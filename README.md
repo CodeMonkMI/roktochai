@@ -9,10 +9,10 @@ This monorepo contains all the components of the RoktoChai project:
 ## Project Structure
 
 ```
-├── packages/
+├── apps/
 │   ├── backend/     # Backend API service
 │   ├── dashboard/   # Admin dashboard
-│   └── landing/     # Landing page website
+└── README.md
 ```
 
 ## Setup
@@ -46,5 +46,4 @@ You can run commands for specific packages using the workspace syntax:
 ```bash
 npm run dev -w @roktochai/backend
 npm run dev -w @roktochai/dashboard
-npm run dev -w @roktochai/landing
 ```
