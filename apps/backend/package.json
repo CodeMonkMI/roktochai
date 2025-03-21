@@ -8,11 +8,13 @@
     "build": "tsc",
     "dev": "nodemon",
     "role:seed": "ts-node src/seeds/roleSeed.ts",
-    "prisma:gen": "prisma generate"
+    "prisma:gen": "prisma generate",
+    "migrate": "prisma migrate dev"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.3",
     "@types/bcrypt": "^5.0.0",
     "@types/bcryptjs": "^2.4.6",
     "@types/cors": "^2.8.13",

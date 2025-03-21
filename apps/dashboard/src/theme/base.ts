@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Theme } from '@mui/material';
 import { PureLightTheme } from './schemes/PureLightTheme';
 
@@ -99,33 +97,35 @@ declare module '@mui/material/styles' {
       };
     };
     general: {
-      reactFrameworkColor: React.CSSProperties['color'];
+      reactFrameworkColor: CSSColor;
       borderRadiusSm: string;
       borderRadius: string;
       borderRadiusLg: string;
       borderRadiusXl: string;
     };
     sidebar: {
-      background: React.CSSProperties['color'];
-      boxShadow: React.CSSProperties['color'];
+      background: CSSColor;
+      boxShadow: CSSColor;
       width: string;
-      textColor: React.CSSProperties['color'];
-      dividerBg: React.CSSProperties['color'];
-      menuItemColor: React.CSSProperties['color'];
-      menuItemColorActive: React.CSSProperties['color'];
-      menuItemBg: React.CSSProperties['color'];
-      menuItemBgActive: React.CSSProperties['color'];
-      menuItemIconColor: React.CSSProperties['color'];
-      menuItemIconColorActive: React.CSSProperties['color'];
-      menuItemHeadingColor: React.CSSProperties['color'];
+      textColor: CSSColor;
+      dividerBg: CSSColor;
+      menuItemColor: CSSColor;
+      menuItemColorActive: CSSColor;
+      menuItemBg: CSSColor;
+      menuItemBgActive: CSSColor;
+      menuItemIconColor: CSSColor;
+      menuItemIconColorActive: CSSColor;
+      menuItemHeadingColor: CSSColor;
     };
     header: {
       height: string;
-      background: React.CSSProperties['color'];
-      boxShadow: React.CSSProperties['color'];
-      textColor: React.CSSProperties['color'];
+      background: CSSColor;
+      boxShadow: CSSColor;
+      textColor: CSSColor;
     };
   }
+
+  type CSSColor = any;
 
   interface ThemeOptions {
     colors: {
@@ -219,31 +219,31 @@ declare module '@mui/material/styles' {
     };
 
     general: {
-      reactFrameworkColor: React.CSSProperties['color'];
+      reactFrameworkColor: CSSColor;
       borderRadiusSm: string;
       borderRadius: string;
       borderRadiusLg: string;
       borderRadiusXl: string;
     };
     sidebar: {
-      background: React.CSSProperties['color'];
-      boxShadow: React.CSSProperties['color'];
+      background: CSSColor;
+      boxShadow: CSSColor;
       width: string;
-      textColor: React.CSSProperties['color'];
-      dividerBg: React.CSSProperties['color'];
-      menuItemColor: React.CSSProperties['color'];
-      menuItemColorActive: React.CSSProperties['color'];
-      menuItemBg: React.CSSProperties['color'];
-      menuItemBgActive: React.CSSProperties['color'];
-      menuItemIconColor: React.CSSProperties['color'];
-      menuItemIconColorActive: React.CSSProperties['color'];
-      menuItemHeadingColor: React.CSSProperties['color'];
+      textColor: CSSColor;
+      dividerBg: CSSColor;
+      menuItemColor: CSSColor;
+      menuItemColorActive: CSSColor;
+      menuItemBg: CSSColor;
+      menuItemBgActive: CSSColor;
+      menuItemIconColor: CSSColor;
+      menuItemIconColorActive: CSSColor;
+      menuItemHeadingColor: CSSColor;
     };
     header: {
       height: string;
-      background: React.CSSProperties['color'];
-      boxShadow: React.CSSProperties['color'];
-      textColor: React.CSSProperties['color'];
+      background: CSSColor;
+      boxShadow: CSSColor;
+      textColor: CSSColor;
     };
   }
 }

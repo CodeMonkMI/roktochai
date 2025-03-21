@@ -113,6 +113,7 @@ export const signUp = async (req: Request, res: Response) => {
       data: null,
     });
   } catch (error) {
+    console.log(error);
     internalServerError(res, error);
   }
 };
