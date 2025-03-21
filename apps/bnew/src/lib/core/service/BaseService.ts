@@ -22,6 +22,7 @@ export abstract class BaseService<TDelegate>
     try {
       return this.repository.findAll({
         where,
+        select: this.selector.find,
       });
     } catch (error) {
       console.log(error);

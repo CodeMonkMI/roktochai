@@ -2,6 +2,13 @@ import cors from "cors";
 import dotenv from "dotenv";
 import express, { Express, Request, Response } from "express";
 import morgan from "morgan";
+import { ActivityController } from "./controllers/activity.controller";
+import { DonationRequestedController } from "./controllers/DonationRequested.controller";
+import { FeaturedController } from "./controllers/featured.controller";
+import { NotificationController } from "./controllers/notification.controller";
+import { OtpRecordsController } from "./controllers/otpRecords.controller";
+import { Reset_passwordController } from "./controllers/reset_password.controller";
+import { RoleController } from "./controllers/role.controller";
 import { UserController } from "./controllers/user.controller";
 import registerController from "./lib/core/controller/registerControllers";
 
@@ -25,11 +32,21 @@ export function createApp() {
     }
   });
 
-  app.get("/", (req: Request, res: Response) => {
+  app.get("/", (_req: Request, res: Response) => {
     console.log("object");
+    res.status(200).json({});
   });
 
-  registerController(app, [UserController]);
+  registerController(app, [
+    UserController,
+    ActivityController,
+    DonationRequestedController,
+    FeaturedController,
+    NotificationController,
+    OtpRecordsController,
+    Reset_passwordController,
+    RoleController,
+  ]);
 
   // 404 not found handler
   app.use((_req, res: Response) => {
